@@ -1,0 +1,49 @@
+{
+  "Devices": [
+    {
+      "id": 1,
+      "customerName": "John Doe",
+      "customerNumber": "123-456-7890",
+      "device": "iPhone 12",
+      "problem": "Screen cracked",
+      "descreption": "The screen is shattered and needs replacement.",
+      "status": "In Progress"
+    },
+    {
+      "id": 2,
+      "customerName": "Jane Smith",
+      "customerNumber": "987-654-3210",
+      "device": "Samsung Galaxy S21",
+      "problem": "Battery draining quickly",
+      "descreption": "The battery is not holding charge and needs replacement.",
+      "status": "Pending"
+    },
+    {
+      "id": 3,
+      "customerName": "Alice Johnson",
+      "customerNumber": "555-123-4567",
+      "device": "Google Pixel 5",
+      "problem": "Camera not working",
+      "descreption": "The camera app crashes when opened, needs diagnosis.",
+      "status": "Completed"
+    },
+    {
+      "id": 4,
+      "customerName": "Bob Brown",
+      "customerNumber": "444-987-6543",
+      "device": "OnePlus 9",
+      "problem": "Overheating",
+      "descreption": "The phone gets very hot during use, needs diagnosis.",
+      "status": "In Progress"
+    },
+    {
+      "id": 5,
+      "customerName": "Charlie Davis",
+      "customerNumber": "333-555-7777",
+      "device": "iPhone SE",
+      "problem": "Speaker not working",
+      "descreption": "The speaker produces no sound, needs replacement.",
+      "status": "Pending"
+    }
+  ]
+}
