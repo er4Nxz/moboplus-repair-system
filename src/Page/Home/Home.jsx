@@ -73,13 +73,14 @@ const Home = () => {
                   <div className="flex gap-2 mx-auto">
                     <Link
                       to={`/edit/${device.id}`}
+                      state={{ background: location }}
                       className="flex justify-center items-center text-sm bg-blue-500 hover:bg-blue-600 text-white px-2 py-1 rounded-md cursor-pointer"
                     >
                       Edit
                       <Pencil2Icon className="ml-2 inline-block" />
                     </Link>
                     <Link
-                      to={`/delete/${device.id}`}
+                      onClick={()=>{}}
                       className="flex justify-center items-center text-sm bg-[#e5484d] hover:bg-[#ce4449] text-white px-2 py-1 rounded-md cursor-pointer"
                     >
                       Delete
