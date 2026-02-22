@@ -1,6 +1,5 @@
 import { useState } from "react";
-import { Tooltip } from "radix-ui";
-import { PlusIcon, MagnifyingGlassIcon } from "@radix-ui/react-icons";
+import {  MagnifyingGlassIcon } from "@radix-ui/react-icons";
 import { useNavigate } from "react-router-dom";
 const Header = () => {
   const navigate = useNavigate();
@@ -24,25 +23,14 @@ const Header = () => {
             name="searchBar"
             value={searchTerm}
             onChange={handleSearchChange}
-            className="pl-8 pr-4 py-1  rounded-lg  placeholder-gray-500 border border-gray-300  transition-all duration-200 focus:outline-0"
+            className="pl-8 pr-4 py-1 focus:py-2 focus:pr-5 focus:pl-9  rounded-lg  placeholder-gray-500 border border-gray-300  transition-all duration-200 focus:outline-0"
             placeholder="Search devices..."
           />
 
-          <Tooltip.Provider>
-            <Tooltip.Root>
-              <Tooltip.Trigger asChild>
-                <button
-                  onClick={() => navigate("/add-device")}
-                  className="inline-flex size-8.75 items-center justify-center rounded-full bg-white shadow-[0_0_10px_1px] outline-0  cursor-pointer shadow-gray-300 hover:shadow-gray-400 transition-shadow duration-200"
-                >
-                  <PlusIcon />
-                </button>
-              </Tooltip.Trigger>
-            </Tooltip.Root>
-          </Tooltip.Provider>
+          
         </div>
 
-        <h1 className="text-2xl font-bold text-gray-700">
+        <h1 className="text-2xl font-bold text-gray-600">
           MoboPlus Repair System
         </h1>
       </div>
