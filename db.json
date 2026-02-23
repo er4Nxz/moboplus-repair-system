@@ -41,14 +41,12 @@
       "date": "1404/03/04"
     },
     {
-      "id": "5",
       "customerName": "Charlie Davis",
       "customerNumber": "0933 555 7777",
       "device": "iPhone SE",
       "problem": "Speaker not working",
-      "description": "The speaker produces no sound, needs replacement.",
-      "status": false,
-      "date": "1404/03/05"
+      "description": "The speaker produces",
+      "id": "5"
     }
   ]
 }
