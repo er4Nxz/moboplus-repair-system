@@ -30,6 +30,7 @@ const Update = ({ data }) => {
           device,
           problem,
           description,
+          date:data.date
         })
         .then(() => {
           navigate("/");
@@ -133,7 +134,7 @@ const Update = ({ data }) => {
             </div>
             <button
               type="submit"
-              className="mt-4 bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 rounded-lg shadow transition-colors"
+              className="mt-4 bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 rounded-lg shadow transition-colors cursor-pointer"
             >
               Add Device
             </button>

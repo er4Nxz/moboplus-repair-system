@@ -7,38 +7,38 @@
       "device": "iPhone 12",
       "problem": "Screen cracked",
       "description": "The screen is shattered and needs replacement.",
-      "status": true,
+      "status": false,
       "date": "1404/03/01"
     },
     {
-      "id": "2",
       "customerName": "Jane Smith",
       "customerNumber": "0987 654 3210",
       "device": "Samsung Galaxy S21",
       "problem": "Battery draining quickly",
       "description": "The battery is not holding charge and needs replacement.",
-      "status": false,
-      "date": "1404/03/02"
+      "date": "1404/03/02",
+      "id": "2",
+      "status": true
     },
     {
-      "id": "3",
       "customerName": "Alice Johnson",
       "customerNumber": "0987 123 4567",
       "device": "Google Pixel 5",
       "problem": "Camera not working",
       "description": "The camera app crashes when opened, needs diagnosis.",
-      "status": true,
-      "date": "1404/03/03"
+      "date": "1404/03/02",
+      "id": "3",
+      "status": false
     },
     {
-      "id": "4",
       "customerName": "Bob Brown",
       "customerNumber": "0944 987 6543",
       "device": "OnePlus 9",
       "problem": "Overheating",
       "description": "The phone gets very hot during use, needs diagnosis.",
-      "status": true,
-      "date": "1404/03/04"
+      "date": "1404/03/02",
+      "id": "4",
+      "status": true
     },
     {
       "customerName": "Charlie Davis",
@@ -46,7 +46,9 @@
       "device": "iPhone SE",
       "problem": "Speaker not working",
       "description": "The speaker produces",
-      "id": "5"
+      "date": "1404/03/02",
+      "id": "5",
+      "status": true
     }
   ]
 }
