@@ -19,9 +19,13 @@ const useFetch = (url) => {
 
   useEffect(() => {
     fetchData();
-  },[url]);
+  }, [url]);
 
-  return { data, error, loading };
+  const refetch = async () => {
+    await fetchData();
+  };
+
+  return { data, error, loading, refetch };
 };
 
 export default useFetch;

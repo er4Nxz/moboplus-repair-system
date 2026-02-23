@@ -6,79 +6,49 @@
       "customerNumber": "0912 345 6789",
       "device": "iPhone 12",
       "problem": "Screen cracked",
-      "descreption": "The screen is shattered and needs replacement.",
+      "description": "The screen is shattered and needs replacement.",
       "status": true,
       "date": "1404/03/01"
     },
     {
-      "id": 2,
+      "id": "2",
       "customerName": "Jane Smith",
       "customerNumber": "0987 654 3210",
       "device": "Samsung Galaxy S21",
       "problem": "Battery draining quickly",
-      "descreption": "The battery is not holding charge and needs replacement.",
+      "description": "The battery is not holding charge and needs replacement.",
       "status": false,
       "date": "1404/03/02"
     },
     {
-      "id": 3,
+      "id": "3",
       "customerName": "Alice Johnson",
       "customerNumber": "0987 123 4567",
       "device": "Google Pixel 5",
       "problem": "Camera not working",
-      "descreption": "The camera app crashes when opened, needs diagnosis.",
+      "description": "The camera app crashes when opened, needs diagnosis.",
       "status": true,
       "date": "1404/03/03"
     },
     {
-      "id": 4,
+      "id": "4",
       "customerName": "Bob Brown",
       "customerNumber": "0944 987 6543",
       "device": "OnePlus 9",
       "problem": "Overheating",
-      "descreption": "The phone gets very hot during use, needs diagnosis.",
+      "description": "The phone gets very hot during use, needs diagnosis.",
       "status": true,
       "date": "1404/03/04"
     },
     {
-      "id": 5,
+      "id": "5",
       "customerName": "Charlie Davis",
       "customerNumber": "0933 555 7777",
       "device": "iPhone SE",
       "problem": "Speaker not working",
-      "descreption": "The speaker produces no sound, needs replacement.",
+      "description": "The speaker produces no sound, needs replacement.",
       "status": false,
       "date": "1404/03/05"
-    },
-    {
-      "id": 6,
-      "customerName": "Diana Evans",
-      "customerNumber": "0922 888 9999",
-      "device": "Samsung Galaxy Note 20",
-      "problem": "Screen flickering",
-      "descreption": "The screen flickers intermittently, needs diagnosis.",
-      "status": true,
-      "date": "1404/03/06"
-    },
-    {
-      "id": 7,
-      "customerName": "Ethan Wilson",
-      "customerNumber": "0911 222 3333",
-      "device": "Google Pixel 4a",
-      "problem": "Charging port not working",
-      "descreption": "The phone does not charge when plugged in, needs replacement.",
-      "status": true,
-      "date": "1404/03/07"
-    },
-    {
-      "id": 8,
-      "customerName": "Fiona Green",
-      "customerNumber": "0944 666 8888",
-      "device": "OnePlus Nord",
-      "problem": "Software issues",
-      "descreption": "The phone freezes and crashes frequently, needs diagnosis.",
-      "status": false,
-      "date": "1404/03/08"
     }
   ]
 }

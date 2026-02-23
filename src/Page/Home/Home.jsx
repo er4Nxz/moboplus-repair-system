@@ -1,16 +1,18 @@
 import { Tooltip } from "radix-ui";
-import { Pencil2Icon, PlusIcon, TrashIcon } from "@radix-ui/react-icons";
+import { Pencil2Icon, PlusIcon } from "@radix-ui/react-icons";
 import useFetch from "../../Hooks/UseFetch/useFetch";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import Delete from "./Delete/Delete";
 
 const Home = () => {
   const { data, error, loading } = useFetch("http://localhost:3001/Devices");
-
-  const location = useLocation();
+  const navigate = useNavigate();
   return (
     <>
       {loading && (
-        <div className="w-full h-screen flex items-center justify-center"></div>
+        <div className="w-full h-screen flex items-center justify-center">
+          Loading ...
+        </div>
       )}
       {error && (
         <div className="w-full h-screen flex items-center justify-center">
@@ -26,12 +28,12 @@ const Home = () => {
               className="mb-4 p-4 bg-white rounded-lg shadow-md hover:bg-gray-50 transition-colors relative"
             >
               <div className="flex items-center">
-                {/* information */} 
-                <div className="flex flex-col gap-2 flex-1">
+                {/* information */}
+                <div className="flex flex-col gap-2 flex-2">
                   <h4 className="text-2xl">
                     {device.device}
                     <div className="inline text-[10px] border border-gray-300 rounded-2xl py-2 px-3 w-fit mx-4">
-                      {device.id}
+                      #{device.id}
                     </div>
                   </h4>
                   <p className="text-gray-600 ">
@@ -40,14 +42,14 @@ const Home = () => {
                   </p>
                 </div>
                 {/* problem */}
-                <div className="flex flex-col gap-2 border-l-2 border-gray-300 px-4 flex-1">
+                <div className="flex flex-col gap-2 border-l-2 border-gray-300 px-4 flex-3">
                   <p className="text-gray-600 text-wrap">
                     <span className="font-semibold">Problem :</span>{" "}
                     {device.problem}
                   </p>
                   <p className="text-gray-600 text-wrap">
                     <span className="font-semibold">Description :</span>{" "}
-                    {device.descreption}
+                    {device.description}
                   </p>
                 </div>
                 {/* status */}
@@ -73,19 +75,12 @@ const Home = () => {
                   <div className="flex gap-2 mx-auto">
                     <Link
                       to={`/edit/${device.id}`}
-                      state={{ background: location }}
                       className="flex justify-center items-center text-sm bg-blue-500 hover:bg-blue-600 text-white px-2 py-1 rounded-md cursor-pointer"
                     >
                       Edit
                       <Pencil2Icon className="ml-2 inline-block" />
                     </Link>
-                    <Link
-                      onClick={()=>{}}
-                      className="flex justify-center items-center text-sm bg-[#e5484d] hover:bg-[#ce4449] text-white px-2 py-1 rounded-md cursor-pointer"
-                    >
-                      Delete
-                      <TrashIcon className="ml-2 inline-block" />
-                    </Link>
+                    <Delete id={device.id} />
                   </div>
                 </div>
               </div>
