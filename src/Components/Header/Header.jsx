@@ -9,7 +9,7 @@ const Header = () => {
   const handleSearchChange = (e) => {
     const value = e.target.value;
     setSearchTerm(value);
-    navigate(`/Home?search=${encodeURIComponent(value)}`);
+    navigate(`?search=${encodeURIComponent(value)}`);
   };
 
   return (
